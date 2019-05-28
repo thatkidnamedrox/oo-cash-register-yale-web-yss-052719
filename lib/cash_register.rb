@@ -13,6 +13,7 @@ class CashRegister
   def add_item(title, price, quantity=1)
     @total += price * quantity
     (1..quantity).each {|_| @items[title] += 1 }
+    @items.keys
   end
 
   def apply_discount
