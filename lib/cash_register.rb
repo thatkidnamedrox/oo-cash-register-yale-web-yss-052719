@@ -29,6 +29,10 @@ class CashRegister
   end
 
   def void_last_transaction
+    last_item = @items.pop
+    if last_item
+      @total -= last_item[1]
+    end
   end
 
 
