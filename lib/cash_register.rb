@@ -7,7 +7,7 @@ class CashRegister
     @discount = args[0]
   end
 
-  def add_item(title, price, quantity*)
+  def add_item(title, price, *args)
   end
 
 end
